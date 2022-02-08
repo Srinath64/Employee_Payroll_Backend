@@ -1,0 +1,7 @@
+2022-02-08 13:22:52.757  INFO 33184 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Starting EmployeePayrollApplication using Java 17.0.1 on Srinaths-MacBook-Air.local with PID 33184 (/Users/srinath/Development/STS/EmployeePayroll/target/classes started by srinath in /Users/srinath/Development/STS/EmployeePayroll)
+2022-02-08 13:22:52.759 DEBUG 33184 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Running with Spring Boot v2.6.3, Spring v5.3.15
+2022-02-08 13:22:52.760  INFO 33184 --- [restartedMain] c.b.e.EmployeePayrollApplication         : No active profile set, falling back to default profiles: default
+2022-02-08 13:22:57.605  WARN 33184 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-02-08 13:22:58.206  WARN 33184 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2022-02-08 13:22:58.309  INFO 33184 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Started EmployeePayrollApplication in 11.278 seconds (JVM running for 12.378)
+2022-02-08 13:22:58.315  INFO 33184 --- [restartedMain] c.b.e.EmployeePayrollApplication         : Employee payroll App Started
