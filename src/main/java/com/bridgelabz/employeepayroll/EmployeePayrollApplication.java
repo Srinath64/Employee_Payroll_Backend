@@ -10,8 +10,7 @@ import org.springframework.context.ApplicationContext;
 public class EmployeePayrollApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(EmployeePayrollApplication.class, args);
-		log.info("Employee payroll App Started");
+		ApplicationContext context = SpringApplication.run(EmployeePayrollApplication.class, args);
+		log.info("Employee payroll App Started in {}", context.getEnvironment().getProperty("environment"));
 	}
-
 }
