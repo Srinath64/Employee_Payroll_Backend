@@ -40,6 +40,15 @@ public class EmployeePayrollController
         return new ResponseEntity<ResponseDTO> (respDTO, HttpStatus.OK);
     }
 
+    //http://localhost:8084/employeepayrollservice/dept/Sales
+    @GetMapping("/dept/{dept}")
+    public ResponseEntity<ResponseDTO> getDepartment(@PathVariable("dept") String dept){
+        List<EmployeePayrollData> empDataList = null;
+        empDataList = employeePayrollService.getEmployeeByDepartment(dept);
+        ResponseDTO respDTO = new ResponseDTO("Get Call Success", empDataList);
+        return new ResponseEntity<ResponseDTO> (respDTO, HttpStatus.OK);
+    }
+
     //http://localhost:8084/employeepayrollservice/create + JSON
     @PostMapping(path = "/create", consumes = {"application/json"})
     public ResponseEntity<ResponseDTO> addEmployeePayrollData(@Valid @RequestBody EmployeePayrollDTO empPayrollDTO)
