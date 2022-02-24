@@ -14,6 +14,9 @@ public @Data class EmployeePayrollData
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "employee_id")
+
+        private int employeeId;
+
     private int id;
 
     private String name;

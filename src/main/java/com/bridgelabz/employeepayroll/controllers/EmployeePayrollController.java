@@ -75,7 +75,7 @@ public class EmployeePayrollController
     public ResponseEntity<ResponseDTO> deleteEmployeePayrollData(@PathVariable("empId") int empId)
     {
         employeePayrollService.deleteEmployeePayrollData(empId);
-        ResponseDTO respDTO = new ResponseDTO("Deleted Successfully", empId);
+        ResponseDTO respDTO = new ResponseDTO("Deleted Successfully", +empId);
         return new ResponseEntity<ResponseDTO> (respDTO, HttpStatus.OK);
     }
 
