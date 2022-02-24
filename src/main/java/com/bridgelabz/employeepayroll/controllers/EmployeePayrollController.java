@@ -16,6 +16,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/employeepayrollservice")
 @Slf4j
+@CrossOrigin(origins = "http://localhost:4200")
 public class EmployeePayrollController
 {
     @Autowired

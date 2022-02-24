@@ -14,14 +14,14 @@ public @Data class EmployeePayrollData
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "employee_id")
-    private int employeeId;
+    private int id;
 
     private String name;
     private long salary;
     private String gender;
 
     @Column(name = "start_date" )
-    private LocalDate startDate;
+    private String startDate;
 
     private String note;
 
@@ -31,7 +31,7 @@ public @Data class EmployeePayrollData
     @ElementCollection
     @CollectionTable(name = "employee_department", joinColumns = @JoinColumn(name = "id"))
     @Column(name = "department")
-    private List<String> departments;
+    private List<String> department;
 
     public EmployeePayrollData() {}
 
@@ -47,6 +47,6 @@ public @Data class EmployeePayrollData
         this.startDate = empPayrollDTO.startDate;
         this.note = empPayrollDTO.note;
         this.profilePic = empPayrollDTO.profilePic;
-        this.departments = empPayrollDTO.departments;
+        this.department = empPayrollDTO.department;
     }
 }
